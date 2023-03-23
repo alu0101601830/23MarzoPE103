@@ -1,0 +1,7 @@
+{
+  "entryPoints": [
+    "./src/Revista.ts",
+    "./src/Suscriptor.ts"
+  ],
+  "out": "./docs"
+}
