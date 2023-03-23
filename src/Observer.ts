@@ -1,4 +1,5 @@
 /**
+ * @interface
  * Interface for observable classes
  */
 export interface Observable {
@@ -8,6 +9,7 @@ export interface Observable {
 }
   
 /**
+ * @interface
  * Interface for observer classes
  */
 export interface Observer {
