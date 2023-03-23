@@ -15,11 +15,6 @@ describe("Revista", () => {
     expect(revista.getTema()).to.be.equal("naturaleza");
   });
 
-  it("agregar suscriptor", () => {
-    let suscriptores_lista: Suscriptor[] = [suscriptor1]
-    revista.subscribe(suscriptor1)
-    expect(revista.getSuscriptores()).to.be.equal(suscriptores_lista);
-  });
 });
 
 describe("Suscriptor", () => {

@@ -1,0 +1,28 @@
+on: ["push", "pull_request"]
+
+name: Test Coveralls
+
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@v1
+
+    - name: Use Node.js 16.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: [12.x, 14.x, 16.x]
+
+    - name: npm install, coverage
+      run: |
+        npm install
+        coverage
+
+    - name: Coveralls
+      uses: coverallsapp/github-action@v1
+
+    - name: Send coverage report to Coveralls
+      env: COVERALLS_REPO_TOKEN=7hR4tvTrP786NIDM47LCLVOPKsq1FFCB3
