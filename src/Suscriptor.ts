@@ -62,7 +62,7 @@ export class Suscriptor implements Observer{
      */
     update(observable: Observable){
         if (observable instanceof Revista){
-            console.log("Soy un suscriptor llamado ${this.getNombre()} y he recibido la notificación de que se ha lanzado el número ${observable.getNumero()} de la revista ${observable.getName()}")
+            console.log(`Soy un suscriptor llamado ${this.getNombre()} y he recibido la notificación de que se ha lanzado el número ${observable.getUltimoNumero()} de la revista ${observable.getName()}`)
         }
     }
 }

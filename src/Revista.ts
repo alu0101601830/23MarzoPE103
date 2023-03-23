@@ -88,7 +88,7 @@ export class Revista implements Observable{
      */
     lanzarNuevoNumero() {
         this.ultimoNumero++;
-        console.log("Se ha lanzado el número ${this.getUltimoNumero()} de la revista ${this.getName()} con el tema ${this.getTema()}");
+        console.log(`Se ha lanzado el número ${this.getUltimoNumero()} de la revista ${this.getName()} con el tema ${this.getTema()}`);
         this.notify();
     }
 }
